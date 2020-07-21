@@ -36,7 +36,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Connection = exports.severusClient = exports.stageClient = void 0;
 var pg_1 = require("pg");
 var stageParams = {
     user: 'deadpool',
