@@ -1,0 +1,33 @@
+{
+  "name": "mailserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/cors": "^2.8.6",
+    "@types/node": "^14.0.23",
+    "@types/pdfmake": "^0.1.14",
+    "@types/pg": "^7.14.4",
+    "@types/pg-pool": "^2.0.2",
+    "@types/web-push": "^3.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "pdfmake": "^0.1.66",
+    "web-push": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.1",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/pdfmake": "^0.1.9",
+    "@types/pg": "^7.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --onSuccess \"node --inspect ./index.js\""
+  }
+}
