@@ -3,6 +3,7 @@ import express from 'express';
 import cors from'cors';
 import * as bodyParser from 'body-parser';
 import { sampleRouter } from'./Routes/Sample/sample';
+import { sendMailRouter } from './Routes/SendMail/sendMail';
 import webpush from 'web-push';
 export const app = (express as any)();
 // const socketIO = require("socket.io");
@@ -18,6 +19,7 @@ app.use(bodyParser.json());
 
 app.use((cors as any)()); // to enable cors for requests
 app.use('/', sampleRouter);
+app.use('/sendmail', sendMailRouter);
 // app.use('*', defaultRouter) // if the user tries to access a path that does not exist.
 const server = http.createServer(app);
 
